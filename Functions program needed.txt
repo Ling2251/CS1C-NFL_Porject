@@ -1,13 +1,16 @@
-Functions needed for NFL porjrct:
+Functions might needed for NFL porjrct:
 
-	- input all the data form the file
-	- sorrting fountions for all teams
-		1) sortting the data by team name
-		2) sortting the data by stadium name
-		3) sorrting the data by seating capacity
-		4) sorrting the data by location
-	- sorrting functions for American teams only
-		1) sortting by team name
-	- updated the data list for all teams
-		1) sortting by team name(can have the same founction as the sorrting fountions for all teams)
-	- get the total capacity once the data list has been updated	
+	- input all the data form the file(do the following to the data)
+		- sorrting fountions for all teams
+			1) sortting the data by team name
+			2) sortting the data by stadium name
+			3) sorrting the data by seating capacity
+			4) sorrting the data by location
+		- sorrting functions for American teams only
+			1) sortting by team name
+		- updated the data list for all teams
+			1) sortting by team name(can have the same founction as the sorrting fountions for all teams)
+		- get the total capacity once the data list has been updated
+	- creat some description
+	- creat some tast scenarios 
+	- creat some story points
