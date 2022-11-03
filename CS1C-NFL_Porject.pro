@@ -10,17 +10,20 @@ CONFIG += c++11
 
 SOURCES += \
     contact.cpp \
+    loginadmin.cpp \
     main.cpp \
     mainwindow.cpp \
     totalCapacity.cpp
 
 HEADERS += \
     contact.h \
+    loginadmin.h \
     mainwindow.h \
     mainwindow.h
 
 FORMS += \
     contact.ui \
+    loginadmin.ui \
     mainwindow.ui
 
 # Default rules for deployment.

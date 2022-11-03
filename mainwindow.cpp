@@ -1,7 +1,8 @@
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include"contact.h"
+#include "contact.h"
+#include "loginadmin.h"
 MainWindow::MainWindow(QWidget *parent):
     QMainWindow(parent) ,
     ui(new Ui::MainWindow)
@@ -26,4 +27,16 @@ void MainWindow::on_ContactUsButton_clicked()
     contact.setModal(true);
     contact.exec();
 }
+
+
+
+
+void MainWindow::on_Login_clicked()
+{
+    LoginAdmin login;
+    login.setModal(true);
+    login.exec();
+}
+
+
 

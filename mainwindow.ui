@@ -166,9 +166,9 @@
    <widget class="QPushButton" name="Americateam">
     <property name="geometry">
      <rect>
-      <x>530</x>
+      <x>510</x>
       <y>10</y>
-      <width>101</width>
+      <width>121</width>
       <height>31</height>
      </rect>
     </property>
@@ -179,9 +179,9 @@
    <widget class="QPushButton" name="Stadiumposition">
     <property name="geometry">
      <rect>
-      <x>250</x>
+      <x>230</x>
       <y>240</y>
-      <width>111</width>
+      <width>131</width>
       <height>41</height>
      </rect>
     </property>
@@ -192,9 +192,9 @@
    <widget class="QPushButton" name="TotalCapacity">
     <property name="geometry">
      <rect>
-      <x>540</x>
+      <x>520</x>
       <y>290</y>
-      <width>101</width>
+      <width>121</width>
       <height>41</height>
      </rect>
     </property>
@@ -205,9 +205,9 @@
    <widget class="QPushButton" name="CapacityList">
     <property name="geometry">
      <rect>
-      <x>790</x>
+      <x>772</x>
       <y>290</y>
-      <width>93</width>
+      <width>111</width>
       <height>41</height>
      </rect>
     </property>
@@ -261,7 +261,7 @@
      <x>0</x>
      <y>0</y>
      <width>952</width>
-     <height>26</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuAdministrator_Only">
