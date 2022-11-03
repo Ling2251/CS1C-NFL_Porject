@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>953</width>
+    <width>952</width>
     <height>517</height>
    </rect>
   </property>
@@ -29,7 +29,7 @@
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true">selection-background-color: rgb(255, 255, 127);</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="ExitButton">
@@ -86,25 +86,6 @@
      <string>Contact Us</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>121</width>
-      <height>131</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>NFL.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
@@ -124,7 +105,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="Signout">
     <property name="geometry">
      <rect>
       <x>770</x>
@@ -137,7 +118,7 @@
      <string>Sign Out</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="Login">
     <property name="geometry">
      <rect>
       <x>860</x>
@@ -150,30 +131,11 @@
      <string>Log In</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>330</y>
-      <width>191</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../Desktop/football court.jpg</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>130</y>
+      <y>170</y>
       <width>141</width>
       <height>161</height>
      </rect>
@@ -182,35 +144,16 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../Desktop/player.jpg</pixmap>
+     <pixmap>player.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="QPushButton" name="TeamName">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>280</y>
-      <width>271</width>
-      <height>161</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../Desktop/team (2).webp</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_3">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
+      <x>260</x>
       <y>10</y>
       <width>93</width>
       <height>28</height>
@@ -220,7 +163,7 @@
      <string>Team Name</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_4">
+   <widget class="QPushButton" name="Americateam">
     <property name="geometry">
      <rect>
       <x>530</x>
@@ -233,7 +176,7 @@
      <string>America Teams</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_5">
+   <widget class="QPushButton" name="Stadiumposition">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -246,7 +189,7 @@
      <string>Stadium Position</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_6">
+   <widget class="QPushButton" name="TotalCapacity">
     <property name="geometry">
      <rect>
       <x>540</x>
@@ -259,7 +202,7 @@
      <string>Total Capacity</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_7">
+   <widget class="QPushButton" name="CapacityList">
     <property name="geometry">
      <rect>
       <x>790</x>
@@ -270,25 +213,6 @@
     </property>
     <property name="text">
      <string>Capacity List</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>40</y>
-      <width>231</width>
-      <height>121</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../Desktop/team.webp</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_7">
@@ -304,7 +228,26 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../Desktop/nfl-teams.gif</pixmap>
+     <pixmap>../Desktop/team (2).webp</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>40</y>
+      <width>231</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Team logos.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -317,7 +260,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>953</width>
+     <width>952</width>
      <height>26</height>
     </rect>
    </property>
