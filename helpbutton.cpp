@@ -12,3 +12,4 @@ helpButton::~helpButton()
 {
     delete ui;
 }
+
