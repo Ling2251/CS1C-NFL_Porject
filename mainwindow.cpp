@@ -2,6 +2,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include"contact.h"
+#include"helpbutton.h"
 MainWindow::MainWindow(QWidget *parent):
     QMainWindow(parent) ,
     ui(new Ui::MainWindow)
@@ -25,5 +26,13 @@ void MainWindow::on_ContactUsButton_clicked()
     contact contact;
     contact.setModal(true);
     contact.exec();
+}
+
+
+void MainWindow::on_HelpButton_clicked()
+{
+    helpButton helpButton;
+    helpButton.setModal(true);
+    helpButton.exec();
 }
 
