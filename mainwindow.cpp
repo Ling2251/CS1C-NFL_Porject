@@ -1,7 +1,7 @@
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-
+#include"contact.h"
 MainWindow::MainWindow(QWidget *parent):
     QMainWindow(parent) ,
     ui(new Ui::MainWindow)
@@ -11,8 +11,7 @@ MainWindow::MainWindow(QWidget *parent):
     // Gave some of the buttom icon
     ui->HelpButton->setIcon(QIcon(":/Images/Help.jpg"));
     ui->ContactUsButton->setIcon(QIcon(":/Images/Contact us.png"));
-    ui->ContactUsButton->setText("Hello, we are glad that you are contact us, our phone number is: 110220330,"
-                                       "call us in any time.");
+    ui->ContactUsButton->setText("Contact Us");
 
 }
 
@@ -20,3 +19,11 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_ContactUsButton_clicked()
+{
+    contact contact;
+    contact.setModal(true);
+    contact.exec();
+}
+
