@@ -36,6 +36,8 @@ void MainWindow::on_Login_clicked()
     LoginAdmin login;
     login.setModal(true);
     login.exec();
+
+    //QString username = ui->lineEdit->text();
 }
 
 
