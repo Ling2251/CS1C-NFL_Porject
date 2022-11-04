@@ -3,6 +3,7 @@
 #include "ui_mainwindow.h"
 #include "contact.h"
 #include "loginadmin.h"
+#include "helpbutton.h"
 MainWindow::MainWindow(QWidget *parent):
     QMainWindow(parent) ,
     ui(new Ui::MainWindow)
