@@ -18,7 +18,7 @@ public:
 private slots:
     void on_ContactUsButton_clicked();
 
-    void on_HelpButton_clicked();
+    void on_Login_clicked();
 
 private:
     Ui::MainWindow *ui;
