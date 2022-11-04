@@ -29,8 +29,6 @@ void MainWindow::on_ContactUsButton_clicked()
 }
 
 
-
-
 void MainWindow::on_Login_clicked()
 {
     LoginAdmin login;
@@ -41,4 +39,10 @@ void MainWindow::on_Login_clicked()
 }
 
 
+void MainWindow::on_HelpButton_clicked()
+{
+    contact contact;
+    contact.setModal(true);
+    contact.exec();
+}
 

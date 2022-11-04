@@ -10,6 +10,7 @@ CONFIG += c++11
 
 SOURCES += \
     contact.cpp \
+    helpbutton.cpp \
     loginadmin.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -17,12 +18,14 @@ SOURCES += \
 
 HEADERS += \
     contact.h \
+    helpbutton.h \
     loginadmin.h \
     mainwindow.h \
     mainwindow.h
 
 FORMS += \
     contact.ui \
+    helpbutton.ui \
     loginadmin.ui \
     mainwindow.ui
 
