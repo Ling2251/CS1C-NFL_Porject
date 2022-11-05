@@ -8,14 +8,14 @@
 
 MainWindow::MainWindow(QWidget *parent):
     QMainWindow(parent) ,
-    //ui(new Ui::MainWindow)
+    ui(new Ui::MainWindow)
 {
-    //ui->setupUi(this);
+    ui->setupUi(this);
 
     // Gave some of the buttom icon
-    //ui->HelpButton->setIcon(QIcon(":/Images/Help.jpg"));
-    //ui->ContactUsButton->setIcon(QIcon(":/Images/Contact us.png"));
-    //ui->ContactUsButton->setText("Contact Us");
+    ui->HelpButton->setIcon(QIcon(":/Images/Help.jpg"));
+    ui->ContactUsButton->setIcon(QIcon(":/Images/Contact us.png"));
+    ui->ContactUsButton->setText("Contact Us");
 
 }
 
