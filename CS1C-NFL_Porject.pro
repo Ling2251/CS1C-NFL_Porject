@@ -9,6 +9,7 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    NFL_input.cpp \
     contact.cpp \
     helpbutton.cpp \
     loginadmin.cpp \
@@ -17,6 +18,7 @@ SOURCES += \
     totalCapacity.cpp
 
 HEADERS += \
+    NFL_input.h \
     contact.h \
     helpbutton.h \
     loginadmin.h \

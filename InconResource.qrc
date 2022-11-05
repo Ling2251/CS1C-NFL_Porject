@@ -7,4 +7,8 @@
         <file>Stadium.jpg</file>
         <file>Team logos.jpg</file>
     </qresource>
+    <qresource prefix="/InputFiles">
+        <file>NFL_New_Team.txt</file>
+        <file>NFL_Information_Input.txt</file>
+    </qresource>
 </RCC>

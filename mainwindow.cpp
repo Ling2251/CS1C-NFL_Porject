@@ -4,16 +4,18 @@
 #include "contact.h"
 #include "loginadmin.h"
 #include "helpbutton.h"
+#include "NFL_input.h"
+
 MainWindow::MainWindow(QWidget *parent):
     QMainWindow(parent) ,
-    ui(new Ui::MainWindow)
+    //ui(new Ui::MainWindow)
 {
-    ui->setupUi(this);
+    //ui->setupUi(this);
 
     // Gave some of the buttom icon
-    ui->HelpButton->setIcon(QIcon(":/Images/Help.jpg"));
-    ui->ContactUsButton->setIcon(QIcon(":/Images/Contact us.png"));
-    ui->ContactUsButton->setText("Contact Us");
+    //ui->HelpButton->setIcon(QIcon(":/Images/Help.jpg"));
+    //ui->ContactUsButton->setIcon(QIcon(":/Images/Contact us.png"));
+    //ui->ContactUsButton->setText("Contact Us");
 
 }
 
@@ -42,8 +44,9 @@ void MainWindow::on_Login_clicked()
 
 void MainWindow::on_HelpButton_clicked()
 {
-    helpButton helpButton;
-    helpButton.setModal(true);
-    helpButton.exec();
+   helpButton helpButton;
+   helpButton.setModal(true);
+   helpButton.exec();
 }
+
 
