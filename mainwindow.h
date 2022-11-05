@@ -27,7 +27,6 @@ private slots:
 
     void on_HelpButton_clicked();
 
-
 private:
     Ui::MainWindow *ui;
 };

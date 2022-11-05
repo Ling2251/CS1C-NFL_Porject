@@ -17,6 +17,9 @@ MainWindow::MainWindow(QWidget *parent):
     ui->ContactUsButton->setIcon(QIcon(":/Images/Contact us.png"));
     ui->ContactUsButton->setText("Contact Us");
 
+    QString fName = ":/InputFiles/NFL_Information_Input.txt";
+    arr->inputFn(fName, arr, AR_SIZE);
+
 }
 
 MainWindow::~MainWindow()
@@ -48,5 +51,3 @@ void MainWindow::on_HelpButton_clicked()
    helpButton.setModal(true);
    helpButton.exec();
 }
-
-
