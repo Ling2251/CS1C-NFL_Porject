@@ -35,7 +35,7 @@
    <widget class="QPushButton" name="ExitButton">
     <property name="geometry">
      <rect>
-      <x>680</x>
+      <x>870</x>
       <y>0</y>
       <width>91</width>
       <height>31</height>
@@ -108,7 +108,7 @@
    <widget class="QPushButton" name="Signout">
     <property name="geometry">
      <rect>
-      <x>770</x>
+      <x>780</x>
       <y>0</y>
       <width>93</width>
       <height>28</height>
@@ -121,7 +121,7 @@
    <widget class="QPushButton" name="Login">
     <property name="geometry">
      <rect>
-      <x>860</x>
+      <x>690</x>
       <y>0</y>
       <width>93</width>
       <height>28</height>
@@ -168,12 +168,12 @@
      <rect>
       <x>510</x>
       <y>10</y>
-      <width>121</width>
+      <width>141</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>America Teams</string>
+     <string>American Teams</string>
     </property>
    </widget>
    <widget class="QPushButton" name="Stadiumposition">
@@ -218,8 +218,8 @@
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>40</y>
+      <x>410</x>
+      <y>90</y>
       <width>301</width>
       <height>221</height>
      </rect>
@@ -261,7 +261,7 @@
      <x>0</x>
      <y>0</y>
      <width>952</width>
-     <height>22</height>
+     <height>24</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuAdministrator_Only">
