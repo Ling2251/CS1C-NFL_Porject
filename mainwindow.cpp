@@ -3,6 +3,9 @@
 #include "ui_mainwindow.h"
 #include "contact.h"
 #include "loginadmin.h"
+#include "helpbutton.h"
+#include "NFL_input.h"
+
 MainWindow::MainWindow(QWidget *parent):
     QMainWindow(parent) ,
     ui(new Ui::MainWindow)
@@ -29,8 +32,6 @@ void MainWindow::on_ContactUsButton_clicked()
 }
 
 
-
-
 void MainWindow::on_Login_clicked()
 {
     LoginAdmin login;
@@ -40,5 +41,12 @@ void MainWindow::on_Login_clicked()
     //QString username = ui->lineEdit->text();
 }
 
+
+void MainWindow::on_HelpButton_clicked()
+{
+   helpButton helpButton;
+   helpButton.setModal(true);
+   helpButton.exec();
+}
 
 
