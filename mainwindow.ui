@@ -153,9 +153,9 @@
    <widget class="QPushButton" name="TeamName">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>240</x>
       <y>10</y>
-      <width>93</width>
+      <width>121</width>
       <height>28</height>
      </rect>
     </property>
