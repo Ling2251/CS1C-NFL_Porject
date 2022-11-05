@@ -4,6 +4,8 @@
 #include "contact.h"
 #include "loginadmin.h"
 #include "helpbutton.h"
+#include "NFL_input.h"
+
 MainWindow::MainWindow(QWidget *parent):
     QMainWindow(parent) ,
     ui(new Ui::MainWindow)
@@ -46,4 +48,5 @@ void MainWindow::on_HelpButton_clicked()
     contact.setModal(true);
     contact.exec();
 }
+
 

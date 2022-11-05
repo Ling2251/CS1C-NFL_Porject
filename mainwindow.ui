@@ -43,7 +43,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>11</pointsize>
+      <pointsize>8</pointsize>
      </font>
     </property>
     <property name="text">
@@ -111,7 +111,7 @@
       <x>770</x>
       <y>0</y>
       <width>93</width>
-      <height>28</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
@@ -124,7 +124,7 @@
       <x>860</x>
       <y>0</y>
       <width>93</width>
-      <height>28</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
@@ -153,27 +153,27 @@
    <widget class="QPushButton" name="TeamName">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>230</x>
       <y>10</y>
-      <width>93</width>
+      <width>141</width>
       <height>28</height>
      </rect>
     </property>
     <property name="text">
-     <string>Team Name</string>
+     <string>Show by Team Name</string>
     </property>
    </widget>
    <widget class="QPushButton" name="Americateam">
     <property name="geometry">
      <rect>
-      <x>510</x>
+      <x>480</x>
       <y>10</y>
-      <width>121</width>
+      <width>171</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>America Teams</string>
+     <string>Show America Teams only</string>
     </property>
    </widget>
    <widget class="QPushButton" name="Stadiumposition">
@@ -181,47 +181,47 @@
      <rect>
       <x>230</x>
       <y>240</y>
-      <width>131</width>
+      <width>171</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>Stadium Position</string>
+     <string>Show by Stadium Position</string>
     </property>
    </widget>
    <widget class="QPushButton" name="TotalCapacity">
     <property name="geometry">
      <rect>
-      <x>520</x>
-      <y>290</y>
-      <width>121</width>
+      <x>480</x>
+      <y>240</y>
+      <width>151</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>Total Capacity</string>
+     <string>Show by Total Capacity</string>
     </property>
    </widget>
    <widget class="QPushButton" name="CapacityList">
     <property name="geometry">
      <rect>
-      <x>772</x>
-      <y>290</y>
-      <width>111</width>
+      <x>710</x>
+      <y>240</y>
+      <width>151</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>Capacity List</string>
+     <string>Show by NFC Team only</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>40</y>
-      <width>301</width>
-      <height>221</height>
+      <x>470</x>
+      <y>50</y>
+      <width>201</width>
+      <height>171</height>
      </rect>
     </property>
     <property name="text">
@@ -240,7 +240,7 @@
       <x>190</x>
       <y>40</y>
       <width>231</width>
-      <height>131</height>
+      <height>161</height>
      </rect>
     </property>
     <property name="text">
@@ -261,7 +261,7 @@
      <x>0</x>
      <y>0</y>
      <width>952</width>
-     <height>22</height>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuAdministrator_Only">
