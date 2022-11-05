@@ -44,9 +44,9 @@ void MainWindow::on_Login_clicked()
 
 void MainWindow::on_HelpButton_clicked()
 {
-    contact contact;
-    contact.setModal(true);
-    contact.exec();
+   helpButton helpButton;
+   helpButton.setModal(true);
+   helpButton.exec();
 }
 
 

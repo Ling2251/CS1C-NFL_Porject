@@ -27,11 +27,6 @@ private slots:
 
     void on_HelpButton_clicked();
 
-    //void on_label_4_linkActivated(const QString &link);
-
-    //void on_TeamName_clicked();
-
-
 
 private:
     Ui::MainWindow *ui;
