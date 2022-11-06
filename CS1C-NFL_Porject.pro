@@ -1,4 +1,5 @@
-QT       += core gui
+QT       += core gui \
+    quick
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -23,7 +24,8 @@ HEADERS += \
     helpbutton.h \
     loginadmin.h \
     mainwindow.h \
-    mainwindow.h
+    mainwindow.h \
+    sortfunction.h
 
 FORMS += \
     contact.ui \
