@@ -16,6 +16,7 @@ SOURCES += \
     loginadmin.cpp \
     main.cpp \
     mainwindow.cpp \
+    sortfunction.cpp \
     totalCapacity.cpp
 
 HEADERS += \
