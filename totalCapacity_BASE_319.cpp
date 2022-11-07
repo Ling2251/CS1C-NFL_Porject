@@ -1,5 +1,4 @@
-
-/*#include "mainwindow.h"
+#include "mainwindow.h"
 #include "ui_mainwindow.h"
 
 
@@ -14,5 +13,4 @@ long calculateCapa(fstream & filename)
             filename[i] >> totalList[i];
         }
     }
-}*/
-
+}
