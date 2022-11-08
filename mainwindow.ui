@@ -55,7 +55,7 @@
      <rect>
       <x>0</x>
       <y>390</y>
-      <width>161</width>
+      <width>151</width>
       <height>61</height>
      </rect>
     </property>
@@ -86,25 +86,6 @@
      <string>Contact Us</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>760</x>
-      <y>30</y>
-      <width>191</width>
-      <height>141</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../Desktop/joinus.jpg</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QPushButton" name="Signout">
     <property name="geometry">
      <rect>
@@ -131,32 +112,10 @@
      <string>Log In</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>170</y>
-      <width>141</width>
-      <height>161</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>player.jpg</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QPushButton" name="TeamName">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>10</y>
-      <width>121</width>
-      <x>230</x>
+      <x>200</x>
       <y>10</y>
       <width>141</width>
       <height>28</height>
@@ -169,8 +128,8 @@
    <widget class="QPushButton" name="Americateam">
     <property name="geometry">
      <rect>
-      <x>480</x>
-      <y>10</y>
+      <x>210</x>
+      <y>240</y>
       <width>171</width>
       <height>31</height>
      </rect>
@@ -182,8 +141,8 @@
    <widget class="QPushButton" name="Stadiumposition">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>240</y>
+      <x>450</x>
+      <y>10</y>
       <width>171</width>
       <height>41</height>
      </rect>
@@ -195,8 +154,8 @@
    <widget class="QPushButton" name="TotalCapacity">
     <property name="geometry">
      <rect>
-      <x>500</x>
-      <y>240</y>
+      <x>670</x>
+      <y>230</y>
       <width>151</width>
       <height>41</height>
      </rect>
@@ -208,8 +167,8 @@
    <widget class="QPushButton" name="CapacityList">
     <property name="geometry">
      <rect>
-      <x>750</x>
-      <y>240</y>
+      <x>440</x>
+      <y>230</y>
       <width>151</width>
       <height>41</height>
      </rect>
@@ -221,7 +180,7 @@
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>470</x>
+      <x>430</x>
       <y>50</y>
       <width>201</width>
       <height>171</height>
@@ -240,17 +199,100 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>150</x>
       <y>40</y>
-      <width>231</width>
-      <height>161</height>
+      <width>261</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Images/Team logos.jpg&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>60</y>
+      <width>251</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Images/Stadium.jpg&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>270</y>
+      <width>371</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Images/images.jpg&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>290</y>
+      <width>181</width>
+      <height>141</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>Team logos.jpg</pixmap>
+     <pixmap>../Desktop/team (2).webp</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>-50</x>
+      <y>-40</y>
+      <width>191</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Images/download.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>200</y>
+      <width>141</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../Desktop/team (2).webp</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
