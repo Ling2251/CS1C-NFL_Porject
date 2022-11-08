@@ -35,7 +35,7 @@
    <widget class="QPushButton" name="ExitButton">
     <property name="geometry">
      <rect>
-      <x>680</x>
+      <x>770</x>
       <y>0</y>
       <width>91</width>
       <height>31</height>
@@ -105,19 +105,6 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="Signout">
-    <property name="geometry">
-     <rect>
-      <x>770</x>
-      <y>0</y>
-      <width>93</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Sign Out</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="Login">
     <property name="geometry">
      <rect>
@@ -153,9 +140,6 @@
    <widget class="QPushButton" name="TeamName">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>10</y>
-      <width>121</width>
       <x>230</x>
       <y>10</y>
       <width>141</width>
@@ -264,7 +248,7 @@
      <x>0</x>
      <y>0</y>
      <width>952</width>
-     <height>25</height>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuAdministrator_Only">
