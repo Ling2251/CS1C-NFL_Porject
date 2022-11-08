@@ -1,10 +1,9 @@
-
-
-/*#include "mainwindow.h"
+#include"NFL_input.h"
+#include "mainwindow.h"
 #include "ui_mainwindow.h"
 
 
-long calculateCapa(fstream & filename)
+/*long calculateCapa(fstream & filename)
 {
     long totalList[30];
     int num = 30000;
