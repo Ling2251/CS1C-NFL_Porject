@@ -4,6 +4,7 @@
 #include "loginadmin.h"
 #include "helpbutton.h"
 #include "NFL_input.h"
+using namespace std;
 
 
 MainWindow::MainWindow(QWidget *parent):
@@ -54,7 +55,19 @@ void MainWindow::on_HelpButton_clicked()
    helpButton.exec();
 }
 
+void MainWindow::on_TeamName_clicked()
+{
+    ui->teamWidget->setRowCount(32);
+    ui->teamWidget->setColumnCount(1);
+    for (int i=0; i<32; i++) {
+        ui->teamWidget->setItem(0,i,  new QTableWidgetItem(arr[i].getTeamName().c_str())) ;
+    }
+
+}
 
 
+void MainWindow::on_teamWidget_cellActivated(int row, int column)
+{
 
+}
 
