@@ -15,6 +15,9 @@ public:
     explicit helpButton(QWidget *parent = nullptr);
     ~helpButton();
 
+private slots:
+    void on_helpButton_2_customContextMenuRequested(const QPoint &pos);
+
 private:
     Ui::helpButton *ui;
 };
