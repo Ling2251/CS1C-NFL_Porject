@@ -29,7 +29,7 @@ private slots:
 
     void on_TeamName_clicked();
 
-    void on_teamWidget_cellActivated(int row, int column);
+
 
 private:
     Ui::MainWindow *ui;

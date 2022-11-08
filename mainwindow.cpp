@@ -59,15 +59,33 @@ void MainWindow::on_TeamName_clicked()
 {
     ui->teamWidget->setRowCount(32);
     ui->teamWidget->setColumnCount(1);
-    for (int i=0; i<32; i++) {
-        ui->teamWidget->setItem(0,i,  new QTableWidgetItem(arr[i].getTeamName().c_str())) ;
+    ui->teamWidget->setColumnWidth(0,200);
+    int i, j, arraysize = 32;
+
+    NFLInput temp;
+
+    for(i = 0; i<arraysize; i++) {
+
+      for(j = i+1; j<arraysize; j++)
+
+      {
+          if(arr[j].getTeamName() < arr[i].getTeamName()) {
+
+            temp = arr[i];
+
+            arr[i] = arr[j];
+
+            arr[j] = temp;
+
+          }
+      }
     }
 
+    for (int i=0; i<arraysize; i++) {
+        ui->teamWidget->setItem(0,i,  new QTableWidgetItem(arr[i].getTeamName().c_str())) ;
+    }
 }
 
 
-void MainWindow::on_teamWidget_cellActivated(int row, int column)
-{
 
-}
 
