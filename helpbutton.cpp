@@ -13,4 +13,6 @@ helpButton::~helpButton()
     delete ui;
 }
 
+void helpButton::on_HelpButton_clicked(){
 
+}

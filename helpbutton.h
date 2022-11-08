@@ -16,7 +16,7 @@ public:
     ~helpButton();
 
 private slots:
-    void on_helpButton_2_customContextMenuRequested(const QPoint &pos);
+    void on_HelpButton_clicked();
 
 private:
     Ui::helpButton *ui;
