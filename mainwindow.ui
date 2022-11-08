@@ -86,7 +86,6 @@
      <string>Contact Us</string>
     </property>
    </widget>
-<<<<<<< HEAD
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
@@ -104,7 +103,6 @@
     </property>
     <property name="scaledContents">
      <bool>true</bool>
-=======
    <widget class="QPushButton" name="Signout">
     <property name="geometry">
      <rect>
@@ -116,7 +114,6 @@
     </property>
     <property name="text">
      <string>Sign Out</string>
->>>>>>> 72bd1a03e127a6480d4c816ccb5efd775b6978a4
     </property>
    </widget>
    <widget class="QPushButton" name="Login">
@@ -135,11 +132,8 @@
    <widget class="QPushButton" name="TeamName">
     <property name="geometry">
      <rect>
-<<<<<<< HEAD
       <x>230</x>
-=======
       <x>200</x>
->>>>>>> 72bd1a03e127a6480d4c816ccb5efd775b6978a4
       <y>10</y>
       <width>141</width>
       <height>28</height>
