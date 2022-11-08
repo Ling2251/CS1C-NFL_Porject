@@ -16,7 +16,6 @@ SOURCES += \
     loginadmin.cpp \
     main.cpp \
     mainwindow.cpp \
-    sortfunction.cpp \
     totalCapacity.cpp
 
 HEADERS += \
@@ -25,8 +24,7 @@ HEADERS += \
     helpbutton.h \
     loginadmin.h \
     mainwindow.h \
-    mainwindow.h \
-    sortfunction.h
+    mainwindow.h
 
 FORMS += \
     contact.ui \

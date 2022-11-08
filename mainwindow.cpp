@@ -1,10 +1,10 @@
-
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "contact.h"
 #include "loginadmin.h"
 #include "helpbutton.h"
 #include "NFL_input.h"
+
 
 MainWindow::MainWindow(QWidget *parent):
     QMainWindow(parent) ,
@@ -16,6 +16,8 @@ MainWindow::MainWindow(QWidget *parent):
     ui->HelpButton->setIcon(QIcon(":/Images/Help.jpg"));
     ui->ContactUsButton->setIcon(QIcon(":/Images/Contact us.png"));
     ui->ContactUsButton->setText("Contact Us");
+
+
 
     QString fName = ":/InputFiles/NFL_Information_Input.txt";
     arr->inputFn(fName, arr, AR_SIZE);
@@ -51,3 +53,8 @@ void MainWindow::on_HelpButton_clicked()
    helpButton.setModal(true);
    helpButton.exec();
 }
+
+
+
+
+
