@@ -89,8 +89,8 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>760</x>
-      <y>30</y>
+      <x>740</x>
+      <y>50</y>
       <width>191</width>
       <height>141</height>
      </rect>
@@ -134,17 +134,14 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>170</y>
+      <x>10</x>
+      <y>210</y>
       <width>141</width>
       <height>161</height>
      </rect>
     </property>
     <property name="text">
      <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>player.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -166,8 +163,8 @@
    <widget class="QPushButton" name="Americateam">
     <property name="geometry">
      <rect>
-      <x>480</x>
-      <y>10</y>
+      <x>190</x>
+      <y>230</y>
       <width>171</width>
       <height>31</height>
      </rect>
@@ -179,8 +176,8 @@
    <widget class="QPushButton" name="Stadiumposition">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>240</y>
+      <x>480</x>
+      <y>10</y>
       <width>171</width>
       <height>41</height>
      </rect>
@@ -192,7 +189,7 @@
    <widget class="QPushButton" name="TotalCapacity">
     <property name="geometry">
      <rect>
-      <x>500</x>
+      <x>680</x>
       <y>240</y>
       <width>151</width>
       <height>41</height>
@@ -205,8 +202,8 @@
    <widget class="QPushButton" name="CapacityList">
     <property name="geometry">
      <rect>
-      <x>750</x>
-      <y>240</y>
+      <x>460</x>
+      <y>230</y>
       <width>151</width>
       <height>41</height>
      </rect>
@@ -218,17 +215,14 @@
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>470</x>
+      <x>450</x>
       <y>50</y>
-      <width>201</width>
+      <width>281</width>
       <height>171</height>
      </rect>
     </property>
     <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../Desktop/team (2).webp</pixmap>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Images/Stadium.jpg&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -237,17 +231,46 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>170</x>
       <y>40</y>
-      <width>231</width>
+      <width>271</width>
       <height>161</height>
      </rect>
     </property>
     <property name="text">
-     <string/>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Images/Team logos.jpg&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
-    <property name="pixmap">
-     <pixmap>Team logos.jpg</pixmap>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>-50</x>
+      <y>-30</y>
+      <width>201</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Images/download.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>270</y>
+      <width>371</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Images/images.jpg&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -261,7 +284,7 @@
      <x>0</x>
      <y>0</y>
      <width>952</width>
-     <height>24</height>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuAdministrator_Only">
@@ -322,4 +345,3 @@
   </connection>
  </connections>
 </ui>
-
