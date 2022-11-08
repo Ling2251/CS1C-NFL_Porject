@@ -1,11 +1,13 @@
 <RCC>
     <qresource prefix="/Images">
         <file>Contact us.png</file>
-        <file>Football.jpg</file>
         <file>Help.jpg</file>
-        <file>Location.png</file>
-        <file>Stadium.jpg</file>
         <file>Team logos.jpg</file>
+        <file>Football.jpg</file>
+        <file>Location.png</file>
+        <file>download.png</file>
+        <file>Stadium.jpg</file>
+        <file>images.jpg</file>
     </qresource>
     <qresource prefix="/InputFiles">
         <file>NFL_New_Team.txt</file>
