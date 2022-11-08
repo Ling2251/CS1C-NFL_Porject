@@ -1,8 +1,11 @@
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include"contact.h"
-#include"helpbutton.h"
+#include "contact.h"
+#include "loginadmin.h"
+#include "helpbutton.h"
+#include "NFL_input.h"
+
 MainWindow::MainWindow(QWidget *parent):
     QMainWindow(parent) ,
     ui(new Ui::MainWindow)
@@ -13,6 +16,9 @@ MainWindow::MainWindow(QWidget *parent):
     ui->HelpButton->setIcon(QIcon(":/Images/Help.jpg"));
     ui->ContactUsButton->setIcon(QIcon(":/Images/Contact us.png"));
     ui->ContactUsButton->setText("Contact Us");
+
+    QString fName = ":/InputFiles/NFL_Information_Input.txt";
+    arr->inputFn(fName, arr, AR_SIZE);
 
 }
 
@@ -29,10 +35,19 @@ void MainWindow::on_ContactUsButton_clicked()
 }
 
 
-void MainWindow::on_HelpButton_clicked()
+void MainWindow::on_Login_clicked()
 {
-    helpButton helpButton;
-    helpButton.setModal(true);
-    helpButton.exec();
+    LoginAdmin login;
+    login.setModal(true);
+    login.exec();
+
+    //QString username = ui->lineEdit->text();
 }
 
+
+void MainWindow::on_HelpButton_clicked()
+{
+   helpButton helpButton;
+   helpButton.setModal(true);
+   helpButton.exec();
+}
