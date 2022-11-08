@@ -8,6 +8,7 @@
         <file>download.png</file>
         <file>Stadium.jpg</file>
         <file>images.jpg</file>
+        <file>Seating capacity</file>
     </qresource>
     <qresource prefix="/InputFiles">
         <file>NFL_New_Team.txt</file>

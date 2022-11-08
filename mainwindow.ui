@@ -271,17 +271,14 @@
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>640</x>
-      <y>290</y>
-      <width>181</width>
-      <height>141</height>
+      <x>630</x>
+      <y>280</y>
+      <width>201</width>
+      <height>171</height>
      </rect>
     </property>
     <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../Desktop/team (2).webp</pixmap>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Images/Seating capacity&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
