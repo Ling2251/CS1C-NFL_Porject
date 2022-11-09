@@ -16,10 +16,10 @@
   <widget class="QTextBrowser" name="textBrowser">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>100</y>
-     <width>256</width>
-     <height>192</height>
+     <x>15</x>
+     <y>10</y>
+     <width>551</width>
+     <height>361</height>
     </rect>
    </property>
    <property name="html">
