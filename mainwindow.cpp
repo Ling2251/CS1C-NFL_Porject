@@ -186,7 +186,7 @@ void MainWindow::on_Stadiumposition_clicked()
 }
 
 
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_SeatingCapacityButtoon_clicked()
 {
     ui->teamWidget->setRowCount(32); //32
     ui->teamWidget->setColumnCount(9);    //9
@@ -236,7 +236,7 @@ void MainWindow::on_pushButton_clicked()
 
 
 
-void MainWindow::on_pushButton_2_clicked()
+void MainWindow::on_LocationButton_clicked()
 {
     ui->teamWidget->setRowCount(32); //32
     ui->teamWidget->setColumnCount(9);    //9
@@ -281,5 +281,29 @@ void MainWindow::on_pushButton_2_clicked()
         ui->teamWidget->setItem(i, 7, new QTableWidgetItem(arr[i].getStadiumRoofType().c_str()));
         ui->teamWidget->setItem(i, 8, new QTableWidgetItem(to_string(arr[i].getDateOpened()).c_str()));
     }
+}
+
+// This is where the user can choose to to see all team list or just the NFC team or sthe AFC Team
+void MainWindow::on_AllTeam_clicked()
+{
+    ui->teamWidget->setVisible(true);
+    ui->NFCWidget->setVisible(false);
+    ui->AFCWidget->setVisible(false);
+}
+
+
+void MainWindow::on_NFCTeam_clicked()
+{
+    ui->teamWidget->setVisible(false);
+    ui->NFCWidget->setVisible(true);
+    ui->AFCWidget->setVisible(false);
+}
+
+
+void MainWindow::on_AFCTem_clicked()
+{
+    ui->teamWidget->setVisible(false);
+    ui->NFCWidget->setVisible(false);
+    ui->AFCWidget->setVisible(true);
 }
 

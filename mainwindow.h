@@ -35,9 +35,15 @@ private slots:
 
     void on_Stadiumposition_clicked();
 
-    void on_pushButton_clicked();
+    void on_SeatingCapacityButtoon_clicked();
 
-    void on_pushButton_2_clicked();
+    void on_LocationButton_clicked();
+
+    void on_AllTeam_clicked();
+
+    void on_NFCTeam_clicked();
+
+    void on_AFCTem_clicked();
 
 private:
     Ui::MainWindow *ui;

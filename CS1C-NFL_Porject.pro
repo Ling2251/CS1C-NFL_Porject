@@ -12,7 +12,6 @@ CONFIG += c++11
 SOURCES += \
     NFL_input.cpp \
     contact.cpp \
-    displayamericanteam.cpp \
     helpbutton.cpp \
     loginadmin.cpp \
     main.cpp \
@@ -21,7 +20,6 @@ SOURCES += \
 HEADERS += \
     NFL_input.h \
     contact.h \
-    displayamericanteam.h \
     helpbutton.h \
     loginadmin.h \
     mainwindow.h \
@@ -29,7 +27,6 @@ HEADERS += \
 
 FORMS += \
     contact.ui \
-    displayamericanteam.ui \
     helpbutton.ui \
     loginadmin.ui \
     mainwindow.ui

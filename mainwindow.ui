@@ -291,7 +291,7 @@
       <x>150</x>
       <y>40</y>
       <width>1171</width>
-      <height>181</height>
+      <height>501</height>
      </rect>
     </property>
     <row>
@@ -675,7 +675,7 @@
      </property>
     </item>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="SeatingCapacityButtoon">
     <property name="geometry">
      <rect>
       <x>430</x>
@@ -688,7 +688,7 @@
      <string>Seating Capacity</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="LocationButton">
     <property name="geometry">
      <rect>
       <x>550</x>
@@ -701,6 +701,65 @@
      <string>Location</string>
     </property>
    </widget>
+   <widget class="QRadioButton" name="AFCTem">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>710</y>
+      <width>97</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>AFC Team</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="NFCTeam">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>710</y>
+      <width>97</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>NFC Team</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="AllTeam">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>710</y>
+      <width>97</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>All Team</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="NFCWidget">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>40</y>
+      <width>1171</width>
+      <height>501</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="AFCWidget">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>40</y>
+      <width>1171</width>
+      <height>501</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menuBar">
@@ -709,7 +768,7 @@
      <x>0</x>
      <y>0</y>
      <width>1328</width>
-     <height>26</height>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuAdministrator_Only">
