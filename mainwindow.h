@@ -33,6 +33,8 @@ private slots:
 
     void on_TotalCapacity_clicked();
 
+    void on_Stadiumposition_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

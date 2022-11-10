@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>952</width>
-    <height>517</height>
+    <width>1328</width>
+    <height>874</height>
    </rect>
   </property>
   <property name="maximumSize">
@@ -35,7 +35,7 @@
    <widget class="QPushButton" name="ExitButton">
     <property name="geometry">
      <rect>
-      <x>680</x>
+      <x>1050</x>
       <y>0</y>
       <width>91</width>
       <height>31</height>
@@ -54,7 +54,7 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>390</y>
+      <y>750</y>
       <width>161</width>
       <height>61</height>
      </rect>
@@ -71,8 +71,8 @@
    <widget class="QPushButton" name="ContactUsButton">
     <property name="geometry">
      <rect>
-      <x>830</x>
-      <y>410</y>
+      <x>1200</x>
+      <y>770</y>
       <width>121</width>
       <height>41</height>
      </rect>
@@ -108,7 +108,7 @@
    <widget class="QPushButton" name="Signout">
     <property name="geometry">
      <rect>
-      <x>770</x>
+      <x>1140</x>
       <y>0</y>
       <width>93</width>
       <height>31</height>
@@ -121,7 +121,7 @@
    <widget class="QPushButton" name="Login">
     <property name="geometry">
      <rect>
-      <x>860</x>
+      <x>1230</x>
       <y>0</y>
       <width>93</width>
       <height>31</height>
@@ -150,10 +150,10 @@
    <widget class="QPushButton" name="TeamName">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>10</y>
-      <width>141</width>
-      <height>28</height>
+      <x>150</x>
+      <y>0</y>
+      <width>151</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
@@ -163,8 +163,8 @@
    <widget class="QPushButton" name="Americateam">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>230</y>
+      <x>210</x>
+      <y>560</y>
       <width>171</width>
       <height>31</height>
      </rect>
@@ -176,9 +176,9 @@
    <widget class="QPushButton" name="Stadiumposition">
     <property name="geometry">
      <rect>
-      <x>480</x>
-      <y>10</y>
-      <width>171</width>
+      <x>300</x>
+      <y>0</y>
+      <width>131</width>
       <height>41</height>
      </rect>
     </property>
@@ -189,8 +189,8 @@
    <widget class="QPushButton" name="TotalCapacity">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>320</y>
+      <x>630</x>
+      <y>740</y>
       <width>161</width>
       <height>61</height>
      </rect>
@@ -211,8 +211,8 @@
    <widget class="QPushButton" name="CapacityList">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>230</y>
+      <x>710</x>
+      <y>550</y>
       <width>151</width>
       <height>41</height>
      </rect>
@@ -240,9 +240,9 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>-30</x>
-      <y>180</y>
-      <width>231</width>
+      <x>210</x>
+      <y>590</y>
+      <width>281</width>
       <height>141</height>
      </rect>
     </property>
@@ -272,8 +272,8 @@
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>270</y>
+      <x>500</x>
+      <y>580</y>
       <width>371</width>
       <height>161</height>
      </rect>
@@ -288,9 +288,9 @@
    <widget class="QTableWidget" name="teamWidget">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>50</y>
-      <width>241</width>
+      <x>150</x>
+      <y>40</y>
+      <width>1171</width>
       <height>181</height>
      </rect>
     </property>
@@ -682,7 +682,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>952</width>
+     <width>1328</width>
      <height>26</height>
     </rect>
    </property>
