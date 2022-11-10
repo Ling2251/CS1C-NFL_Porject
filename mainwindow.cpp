@@ -5,6 +5,8 @@
 #include "loginadmin.h"
 #include "helpbutton.h"
 #include "NFL_input.h"
+#include"string"
+#include"sstream"
 using namespace std;
 
 
@@ -58,8 +60,8 @@ void MainWindow::on_HelpButton_clicked()
 
 void MainWindow::on_TeamName_clicked()
 {
-    ui->teamWidget->setRowCount(32);
-    ui->teamWidget->setColumnCount(9);
+    ui->teamWidget->setRowCount(32); //32
+    ui->teamWidget->setColumnCount(9);    //9
     ui->teamWidget->setColumnWidth(0,200);
 
     int i, j, arraysize = 32;
@@ -102,5 +104,30 @@ void MainWindow::on_TeamName_clicked()
         ui->teamWidget->setItem(i, 8, new QTableWidgetItem(to_string(arr[i].getDateOpened()).c_str()));
     }
 
+}
+
+void MainWindow::on_TotalCapacity_clicked()
+{
+    NFLInput tempCapacity;
+    long total = 0;
+    int temp1 = 0;
+    int temp2 = 0;
+    for(int i=0; i<AR_SIZE;i++)
+    {
+        temp1 = arr[i].getSeatingCapacity();
+        temp2 = arr[i+1].getSeatingCapacity();
+        total += temp1;
+        if(temp1 == temp2)
+        {
+            total -= temp2;
+        }
+
+    }
+
+        stringstream stream;
+        stream << total;
+        string total_to_string;
+        total_to_string = stream.str();
+        ui->TotalCapacity->setText(total_to_string.c_str());
 }
 

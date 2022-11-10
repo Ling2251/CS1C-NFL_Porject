@@ -16,8 +16,7 @@ SOURCES += \
     helpbutton.cpp \
     loginadmin.cpp \
     main.cpp \
-    mainwindow.cpp \
-    totalCapacity.cpp
+    mainwindow.cpp
 
 HEADERS += \
     NFL_input.h \

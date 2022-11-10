@@ -31,6 +31,8 @@ private slots:
 
 
 
+    void on_TotalCapacity_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
