@@ -16,7 +16,11 @@ public:
     ~LoginAdmin();
 
 private slots:
-    void on_pushButton_clicked();
+    void on_pushButton_clicked(); //Admin Login
+
+    void on_Admin_cancel_clicked(); //Admin Team Page (page 2)
+
+    void on_Admin_Add_clicked(); //Admin Adds new team
 
 private:
     Ui::LoginAdmin *ui;
