@@ -22,6 +22,8 @@ private slots:
 
     void on_Admin_Add_clicked(); //Admin Adds new team
 
+    void on_Page1Exit_PushBut_clicked();
+
 private:
     Ui::LoginAdmin *ui;
 };
