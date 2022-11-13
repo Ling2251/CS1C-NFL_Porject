@@ -19,6 +19,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     NFLInput arr[AR_SIZE];
+    const int HEADER_SIZE = 9;
 
 private slots:
     void on_ContactUsButton_clicked();
@@ -27,25 +28,30 @@ private slots:
 
     void on_HelpButton_clicked();
 
-    void on_TeamName_clicked();
+    //void on_TeamName_clicked();
 
 
 
     void on_TotalCapacity_clicked();
 
-    void on_Stadiumposition_clicked();
+    //void on_Stadiumposition_clicked();
 
-    void on_SeatingCapacityButtoon_clicked();
+    //void on_SeatingCapacityButtoon_clicked();
 
-    void on_LocationButton_clicked();
+   // void on_LocationButton_clicked();
 
-    void on_AllTeam_clicked();
+    //void on_AllTeam_clicked();
 
     void on_NFCTeam_clicked();
 
     void on_AFCTem_clicked();
 
+
+
+    void on_AllTeam_clicked();
+
 private:
     Ui::MainWindow *ui;
+    void MainWindow::ListDisplay();
 };
 #endif // MAINWINDOW_H

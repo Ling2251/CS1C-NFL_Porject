@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1328</width>
+    <width>1408</width>
     <height>874</height>
    </rect>
   </property>
@@ -35,7 +35,7 @@
    <widget class="QPushButton" name="ExitButton">
     <property name="geometry">
      <rect>
-      <x>1050</x>
+      <x>1120</x>
       <y>0</y>
       <width>91</width>
       <height>31</height>
@@ -71,7 +71,7 @@
    <widget class="QPushButton" name="ContactUsButton">
     <property name="geometry">
      <rect>
-      <x>1200</x>
+      <x>1260</x>
       <y>770</y>
       <width>121</width>
       <height>41</height>
@@ -108,7 +108,7 @@
    <widget class="QPushButton" name="Signout">
     <property name="geometry">
      <rect>
-      <x>1140</x>
+      <x>1210</x>
       <y>0</y>
       <width>93</width>
       <height>31</height>
@@ -121,7 +121,7 @@
    <widget class="QPushButton" name="Login">
     <property name="geometry">
      <rect>
-      <x>1230</x>
+      <x>1300</x>
       <y>0</y>
       <width>93</width>
       <height>31</height>
@@ -147,50 +147,11 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="TeamName">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>0</y>
-      <width>151</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string> Team Name</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="Americateam">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>560</y>
-      <width>171</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>America Teams</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="Stadiumposition">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>0</y>
-      <width>131</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Stadium Position</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="TotalCapacity">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>740</y>
+      <x>620</x>
+      <y>750</y>
       <width>161</width>
       <height>61</height>
      </rect>
@@ -206,19 +167,6 @@
     </property>
     <property name="text">
      <string>Total Capacity</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="CapacityList">
-    <property name="geometry">
-     <rect>
-      <x>710</x>
-      <y>550</y>
-      <width>151</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string> NFC Team</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_7">
@@ -237,28 +185,12 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>590</y>
-      <width>281</width>
-      <height>141</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Images/Team logos.jpg&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
       <x>-50</x>
-      <y>-30</y>
-      <width>201</width>
+      <y>-40</y>
+      <width>171</width>
       <height>191</height>
      </rect>
     </property>
@@ -269,29 +201,13 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>580</y>
-      <width>371</width>
-      <height>161</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Images/images.jpg&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QTableWidget" name="teamWidget">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>120</x>
       <y>40</y>
-      <width>1171</width>
-      <height>501</height>
+      <width>1271</width>
+      <height>661</height>
      </rect>
     </property>
     <row>
@@ -675,40 +591,19 @@
      </property>
     </item>
    </widget>
-   <widget class="QPushButton" name="SeatingCapacityButtoon">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>0</y>
-      <width>121</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Seating Capacity</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="LocationButton">
-    <property name="geometry">
-     <rect>
-      <x>550</x>
-      <y>0</y>
-      <width>121</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Location</string>
-    </property>
-   </widget>
    <widget class="QRadioButton" name="AFCTem">
     <property name="geometry">
      <rect>
-      <x>1000</x>
+      <x>1046</x>
       <y>710</y>
-      <width>97</width>
-      <height>22</height>
+      <width>111</width>
+      <height>21</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
     </property>
     <property name="text">
      <string>AFC Team</string>
@@ -717,11 +612,16 @@
    <widget class="QRadioButton" name="NFCTeam">
     <property name="geometry">
      <rect>
-      <x>1100</x>
+      <x>1170</x>
       <y>710</y>
-      <width>97</width>
+      <width>111</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
     </property>
     <property name="text">
      <string>NFC Team</string>
@@ -730,11 +630,16 @@
    <widget class="QRadioButton" name="AllTeam">
     <property name="geometry">
      <rect>
-      <x>1200</x>
+      <x>1290</x>
       <y>710</y>
-      <width>97</width>
+      <width>101</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
     </property>
     <property name="text">
      <string>All Team</string>
@@ -743,21 +648,41 @@
    <widget class="QTableWidget" name="NFCWidget">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>120</x>
       <y>40</y>
-      <width>1171</width>
-      <height>501</height>
+      <width>1271</width>
+      <height>661</height>
      </rect>
     </property>
    </widget>
    <widget class="QTableWidget" name="AFCWidget">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>120</x>
       <y>40</y>
-      <width>1171</width>
-      <height>501</height>
+      <width>1271</width>
+      <height>661</height>
      </rect>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>710</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Display options -&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
   </widget>
@@ -767,7 +692,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1328</width>
+     <width>1408</width>
      <height>25</height>
     </rect>
    </property>

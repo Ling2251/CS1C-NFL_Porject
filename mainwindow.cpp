@@ -1,4 +1,3 @@
-
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "contact.h"
@@ -7,6 +6,11 @@
 #include "NFL_input.h"
 #include"string"
 #include"sstream"
+
+#include <QTableWidget>
+#include <QTableWidgetItem>
+#include <QHeaderView>
+#include <QSortFilterProxyModel>
 using namespace std;
 
 
@@ -15,16 +19,14 @@ MainWindow::MainWindow(QWidget *parent):
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ListDisplay();
+    ui->NFCWidget->setVisible(false);
+    ui->AFCWidget->setVisible(false);
 
     // Gave some of the buttom icon
     ui->HelpButton->setIcon(QIcon(":/Images/Help.jpg"));
     ui->ContactUsButton->setIcon(QIcon(":/Images/Contact us.png"));
     ui->ContactUsButton->setText("Contact Us");
-
-
-
-    QString fName = ":/InputFiles/NFL_Information_Input.txt";
-    arr->inputFn(fName, arr, AR_SIZE);
 
 }
 
@@ -57,7 +59,7 @@ void MainWindow::on_HelpButton_clicked()
    helpButton.setModal(true);
    helpButton.exec();
 }
-
+/*
 void MainWindow::on_TeamName_clicked()
 {
     ui->teamWidget->setRowCount(32); //32
@@ -81,15 +83,10 @@ void MainWindow::on_TeamName_clicked()
     }
 
     // print the table headers
-    ui->teamWidget->setItem(0,0, new QTableWidgetItem("Team Name"));
-    ui->teamWidget->setItem(0,1, new QTableWidgetItem("Stadium Name"));
-    ui->teamWidget->setItem(0,2, new QTableWidgetItem("Seating Capacity"));
-    ui->teamWidget->setItem(0,3, new QTableWidgetItem("Location"));
-    ui->teamWidget->setItem(0,4, new QTableWidgetItem("Conference"));
-    ui->teamWidget->setItem(0,5, new QTableWidgetItem("Division"));
-    ui->teamWidget->setItem(0,6, new QTableWidgetItem("Surface Type"));
-    ui->teamWidget->setItem(0,7, new QTableWidgetItem("Stadium Roof Type"));
-    ui->teamWidget->setItem(0,8, new QTableWidgetItem("Date Opened"));
+    QStringList hLabels;
+    hLabels << "Team Name" << "Stadium Name" << "Seating Capacity" << "Location" << "Conference" << "Division"
+            << "Surface Type" << "Roof Type" << "Date Opened";
+    ui->teamWidget->setHorizontalHeaderLabels(hLabels);
 
     // fill out the table
     for (i=0; i<arraysize; i++) {
@@ -105,7 +102,7 @@ void MainWindow::on_TeamName_clicked()
     }
 
 }
-
+*/
 void MainWindow::on_TotalCapacity_clicked()
 {
     NFLInput tempCapacity;
@@ -137,7 +134,7 @@ void MainWindow::on_TotalCapacity_clicked()
 }
 
 
-
+/*
 void MainWindow::on_Stadiumposition_clicked()
 {
     ui->teamWidget->setRowCount(32); //32
@@ -161,15 +158,10 @@ void MainWindow::on_Stadiumposition_clicked()
     }
 
     // print the table headers
-    ui->teamWidget->setItem(0,0, new QTableWidgetItem("Team Name"));
-    ui->teamWidget->setItem(0,1, new QTableWidgetItem("Stadium Name"));
-    ui->teamWidget->setItem(0,2, new QTableWidgetItem("Seating Capacity"));
-    ui->teamWidget->setItem(0,3, new QTableWidgetItem("Location"));
-    ui->teamWidget->setItem(0,4, new QTableWidgetItem("Conference"));
-    ui->teamWidget->setItem(0,5, new QTableWidgetItem("Division"));
-    ui->teamWidget->setItem(0,6, new QTableWidgetItem("Surface Type"));
-    ui->teamWidget->setItem(0,7, new QTableWidgetItem("Stadium Roof Type"));
-    ui->teamWidget->setItem(0,8, new QTableWidgetItem("Date Opened"));
+    QStringList hLabels;
+    hLabels << "Team Name" << "Stadium Name" << "Seating Capacity" << "Location" << "Conference" << "Division"
+            << "Surface Type" << "Roof Type" << "Date Opened";
+    ui->teamWidget->setHorizontalHeaderLabels(hLabels);
 
     // fill out the table
     for (i=0; i<arraysize; i++) {
@@ -209,15 +201,10 @@ void MainWindow::on_SeatingCapacityButtoon_clicked()
     }
 
     // print the table headers
-    ui->teamWidget->setItem(0,0, new QTableWidgetItem("Team Name"));
-    ui->teamWidget->setItem(0,1, new QTableWidgetItem("Stadium Name"));
-    ui->teamWidget->setItem(0,2, new QTableWidgetItem("Seating Capacity"));
-    ui->teamWidget->setItem(0,3, new QTableWidgetItem("Location"));
-    ui->teamWidget->setItem(0,4, new QTableWidgetItem("Conference"));
-    ui->teamWidget->setItem(0,5, new QTableWidgetItem("Division"));
-    ui->teamWidget->setItem(0,6, new QTableWidgetItem("Surface Type"));
-    ui->teamWidget->setItem(0,7, new QTableWidgetItem("Stadium Roof Type"));
-    ui->teamWidget->setItem(0,8, new QTableWidgetItem("Date Opened"));
+    QStringList hLabels;
+    hLabels << "Team Name" << "Stadium Name" << "Seating Capacity" << "Location" << "Conference" << "Division"
+            << "Surface Type" << "Roof Type" << "Date Opened";
+    ui->teamWidget->setHorizontalHeaderLabels(hLabels);
 
     // fill out the table
     for (i=0; i<arraysize; i++) {
@@ -259,15 +246,10 @@ void MainWindow::on_LocationButton_clicked()
     }
 
     // print the table headers
-    ui->teamWidget->setItem(0,0, new QTableWidgetItem("Team Name"));
-    ui->teamWidget->setItem(0,1, new QTableWidgetItem("Stadium Name"));
-    ui->teamWidget->setItem(0,2, new QTableWidgetItem("Seating Capacity"));
-    ui->teamWidget->setItem(0,3, new QTableWidgetItem("Location"));
-    ui->teamWidget->setItem(0,4, new QTableWidgetItem("Conference"));
-    ui->teamWidget->setItem(0,5, new QTableWidgetItem("Division"));
-    ui->teamWidget->setItem(0,6, new QTableWidgetItem("Surface Type"));
-    ui->teamWidget->setItem(0,7, new QTableWidgetItem("Stadium Roof Type"));
-    ui->teamWidget->setItem(0,8, new QTableWidgetItem("Date Opened"));
+    QStringList hLabels;
+    hLabels << "Team Name" << "Stadium Name" << "Seating Capacity" << "Location" << "Conference" << "Division"
+            << "Surface Type" << "Roof Type" << "Date Opened";
+    ui->teamWidget->setHorizontalHeaderLabels(hLabels);
 
     // fill out the table
     for (i=0; i<arraysize; i++) {
@@ -281,6 +263,121 @@ void MainWindow::on_LocationButton_clicked()
         ui->teamWidget->setItem(i, 7, new QTableWidgetItem(arr[i].getStadiumRoofType().c_str()));
         ui->teamWidget->setItem(i, 8, new QTableWidgetItem(to_string(arr[i].getDateOpened()).c_str()));
     }
+}
+*/
+
+void MainWindow::ListDisplay(){
+
+    ui->teamWidget->setColumnCount(HEADER_SIZE);
+    ui->teamWidget->setRowCount(AR_SIZE);
+    ui->AFCWidget->setColumnCount(HEADER_SIZE);
+    ui->AFCWidget->setRowCount(1);
+    ui->NFCWidget->setColumnCount(HEADER_SIZE);
+    ui->NFCWidget->setRowCount(1);
+
+    int AFCTeams = -1;      // set it to -1 so when the loop started to count it goes to 0 for one.
+    int NFLTeams = -1;
+
+    // defulat is to display all team.
+    bool DisplayAFCTeam = false;
+
+    // Set the header labels for the table widget we have
+    QStringList hLabels;
+    hLabels << "Team Name" << "Stadium Name" << "Seating Capacity" << "Location" << "Conference" << "Division"
+            << "Surface Type" << "Roof Type" << "Date Opened";
+    ui->teamWidget->setHorizontalHeaderLabels(hLabels);
+    ui->AFCWidget->setHorizontalHeaderLabels(hLabels);
+    ui->NFCWidget->setHorizontalHeaderLabels(hLabels);
+
+    // gave the input file
+    QString fName = ":/InputFiles/NFL_Information_Input.txt";
+    arr->inputFn(fName, arr, AR_SIZE);
+
+    // insert the data into cells and also check and stored the NFL/ AFC team into different teams to display later
+    for(int i = 0; i < ui->teamWidget->rowCount(); i++)
+    {
+        QTableWidgetItem *item;     // new pointer
+        QTableWidgetItem *item2;
+
+        //check to see if the team are AFC teams
+        if(arr[i].getConference()[0] == 'A')
+        {
+            DisplayAFCTeam = true;
+            AFCTeams++; // get the number of AFC teams in the list
+            ui->AFCWidget->setRowCount(AFCTeams + 1);
+        } else {
+            NFLTeams++; // get the number of NFL teams in the list
+            DisplayAFCTeam = false;
+            ui->NFCWidget->setRowCount(NFLTeams + 1);
+        }
+
+        // loop through all the team in the list and get the data
+        for(int j = 0; j < ui->teamWidget->columnCount(); j++)
+        {
+            item = new QTableWidgetItem;    // set a new pointer
+            item2 = new QTableWidgetItem;   // set a new pointer
+
+            // used the get function to input all the data to the list by column
+            switch (j) {
+                case 0: item->setText(QString::fromStdString(arr[i].getTeamName()));
+                        item2->setText(QString::fromStdString(arr[i].getTeamName()));
+                    break;
+                case 1: item->setText(QString::fromStdString(arr[i].getStadiumName()));
+                        item2->setText(QString::fromStdString(arr[i].getStadiumName()));
+                    break;
+                case 2: item->setText(QString::fromStdString(to_string(arr[i].getSeatingCapacity())));
+                        item2->setText(QString::fromStdString(to_string(arr[i].getSeatingCapacity())));
+                    break;
+                case 3: item->setText(QString::fromStdString(arr[i].getLocation()));
+                        item2->setText(QString::fromStdString(arr[i].getLocation()));
+                    break;
+                case 4: item->setText(QString::fromStdString(arr[i].getConference()));
+                        item2->setText(QString::fromStdString(arr[i].getConference()));
+                    break;
+                case 5: item->setText(QString::fromStdString(arr[i].getDivision()));
+                        item2->setText(QString::fromStdString(arr[i].getDivision()));
+                    break;
+                case 6: item->setText(QString::fromStdString(arr[i].getSurfaceType()));
+                    item2->setText(QString::fromStdString(arr[i].getSurfaceType()));
+                    break;
+                case 7: item->setText(QString::fromStdString(arr[i].getStadiumRoofType()));
+                        item2->setText(QString::fromStdString(arr[i].getStadiumRoofType()));
+                    break;
+                case 8: item->setText(QString::fromStdString(to_string(arr[i].getDateOpened())));
+                        item2->setText(QString::fromStdString(to_string(arr[i].getDateOpened())));
+                    break;
+            }
+
+            // default display the original list
+            // Qt::ItemIsEditable flags is so the user can interact with the list
+            item->setFlags(item->flags() ^ Qt::ItemIsEditable);
+            ui->teamWidget->setItem(i, j, item);
+
+            // check to see if the user wants to see only AFC or NFL teams
+            if(DisplayAFCTeam == true)
+            {
+                item2->setFlags(item2->flags() ^ Qt::ItemIsEditable);
+                // display only AFC teams
+                ui->AFCWidget->setItem(AFCTeams, j, item2);
+            }
+            else
+            {
+                item2->setFlags(item2->flags() ^ Qt::ItemIsEditable);
+                // display only NFC teams
+                ui->NFCWidget->setItem(NFLTeams, j, item2);
+            }
+        }
+    }
+
+    // used the built-in function in the table widget to sort all the data throughout the list
+    // QHeaderView::ResizeToContents is a flage that will automatically resize the row and colmon size
+    //  if it has changed
+    ui->teamWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
+    ui->teamWidget->setSortingEnabled(true);
+    ui->NFCWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
+    ui->NFCWidget->setSortingEnabled(true);
+    ui->AFCWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
+    ui->AFCWidget->setSortingEnabled(true);
 }
 
 // This is where the user can choose to to see all team list or just the NFC team or sthe AFC Team
