@@ -18,6 +18,7 @@ MainWindow::MainWindow(QWidget *parent):
     QMainWindow(parent) ,
     ui(new Ui::MainWindow)
 {
+   // connect(LoginAdmin, &LoginAdmin::on_addTeamsButton_clicked, this, &MainWindow::addTeamTables);
     ui->setupUi(this);
     ListDisplay();
     ui->NFCWidget->setVisible(false);

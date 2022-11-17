@@ -52,6 +52,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    void MainWindow::ListDisplay();
+    void ListDisplay();
+    //void addNewTeamToList();
 };
 #endif // MAINWINDOW_H
