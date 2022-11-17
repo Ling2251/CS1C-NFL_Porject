@@ -700,7 +700,7 @@ p, li { white-space: pre-wrap; }
     <property name="title">
      <string>Administrator Only</string>
     </property>
-    <addaction name="actionLog_In"/>
+    <addaction name="actionLog"/>
     <addaction name="actionSing_Out"/>
     <addaction name="separator"/>
     <addaction name="actionAdd_New_Teams"/>
@@ -718,7 +718,7 @@ p, li { white-space: pre-wrap; }
     <bool>false</bool>
    </attribute>
   </widget>
-  <action name="actionLog_In">
+  <action name="actionLog">
    <property name="text">
     <string>Log In</string>
    </property>

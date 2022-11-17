@@ -6,6 +6,7 @@
 #include <cstring>
 #include <QDebug>
 #include "NFL_input.h"
+#include "loginform.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -18,8 +19,10 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    LoginForm *loginForm = new LoginForm();
     NFLInput arr[AR_SIZE];
     const int HEADER_SIZE = 9;
+    int totalSize;
 
 private slots:
     void on_ContactUsButton_clicked();
@@ -32,7 +35,7 @@ private slots:
 
 
 
-    void on_TotalCapacity_clicked();
+    //void on_TotalCapacity_clicked();
 
     //void on_Stadiumposition_clicked();
 
@@ -46,6 +49,7 @@ private slots:
 
     void on_AFCTem_clicked();
 
+    void on_actionLog_triggered();
 
 
     void on_AllTeam_clicked();
@@ -53,6 +57,6 @@ private slots:
 private:
     Ui::MainWindow *ui;
     void ListDisplay();
-    //void addNewTeamToList();
+    void expandTables();
 };
 #endif // MAINWINDOW_H

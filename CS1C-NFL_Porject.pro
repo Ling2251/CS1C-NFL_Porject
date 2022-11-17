@@ -13,7 +13,7 @@ SOURCES += \
     NFL_input.cpp \
     contact.cpp \
     helpbutton.cpp \
-    loginadmin.cpp \
+    loginform.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -21,14 +21,14 @@ HEADERS += \
     NFL_input.h \
     contact.h \
     helpbutton.h \
-    loginadmin.h \
+    loginform.h \
     mainwindow.h \
     mainwindow.h
 
 FORMS += \
     contact.ui \
     helpbutton.ui \
-    loginadmin.ui \
+    loginform.ui \
     mainwindow.ui
 
 # Default rules for deployment.

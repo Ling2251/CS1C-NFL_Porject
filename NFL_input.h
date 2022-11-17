@@ -46,7 +46,7 @@ public:
     std::string getSurfaceType();
     std::string getStadiumRoofType();
     int getDateOpened();
+    int totalCap(NFLInput arr[]) const;
 };
-
 
 #endif // NFL_INPUT_H

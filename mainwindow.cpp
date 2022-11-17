@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "contact.h"
-#include "loginadmin.h"
+#include "loginform.h"
 #include "helpbutton.h"
 #include "NFL_input.h"
 #include"string"
@@ -18,7 +18,7 @@ MainWindow::MainWindow(QWidget *parent):
     QMainWindow(parent) ,
     ui(new Ui::MainWindow)
 {
-   // connect(LoginAdmin, &LoginAdmin::on_addTeamsButton_clicked, this, &MainWindow::addTeamTables);
+    connect(loginForm, &LoginForm::on_expandTeamsButton_clicked, this, &MainWindow::expandTables);
     ui->setupUi(this);
     ListDisplay();
     ui->NFCWidget->setVisible(false);
@@ -46,7 +46,7 @@ void MainWindow::on_ContactUsButton_clicked()
 
 void MainWindow::on_Login_clicked()
 {
-    LoginAdmin login;
+    LoginForm login;
     login.setModal(true);
     login.exec();
 
@@ -104,35 +104,6 @@ void MainWindow::on_TeamName_clicked()
 
 }
 */
-void MainWindow::on_TotalCapacity_clicked()
-{
-    NFLInput tempCapacity;
-
-    // declare a total num, and two temp num to store seating num
-    long total = 0;
-    int temp1 = 0;
-    int temp2 = 0;
-
-    // for loop to calculate the total
-    for(int i=0; i<AR_SIZE;i++)
-    {
-        temp1 = arr[i].getSeatingCapacity();
-        temp2 = arr[i+1].getSeatingCapacity();
-        total += temp1;
-        if(temp1 == temp2)
-        {
-            total -= temp2;
-        }
-
-    }
-
-    // change the long datatype to string then it can output as a text
-        stringstream stream;
-        stream << total;
-        string total_to_string;
-        total_to_string = stream.str();
-        ui->TotalCapacity->setText(total_to_string.c_str());
-}
 
 
 /*
@@ -269,11 +240,11 @@ void MainWindow::on_LocationButton_clicked()
 
 void MainWindow::ListDisplay(){
 
-    ui->teamWidget->setColumnCount(HEADER_SIZE);
+    ui->teamWidget->setColumnCount(9);
     ui->teamWidget->setRowCount(AR_SIZE);
-    ui->AFCWidget->setColumnCount(HEADER_SIZE);
+    ui->AFCWidget->setColumnCount(9);
     ui->AFCWidget->setRowCount(1);
-    ui->NFCWidget->setColumnCount(HEADER_SIZE);
+    ui->NFCWidget->setColumnCount(9);
     ui->NFCWidget->setRowCount(1);
 
     int AFCTeams = -1;      // set it to -1 so when the loop started to count it goes to 0 for one.
@@ -368,6 +339,11 @@ void MainWindow::ListDisplay(){
                 ui->NFCWidget->setItem(NFLTeams, j, item2);
             }
         }
+        // totalCap function is at NFL_input.cpp file and it will return a integer
+        // total size is initialize at MainWindow.h file
+        totalSize = arr->totalCap(arr);
+        // outputing the totalsize is display to the TotalCapacity button
+        ui->TotalCapacity->setText(QString::fromStdString(to_string(totalSize)));
     }
 
     // used the built-in function in the table widget to sort all the data throughout the list
@@ -379,6 +355,122 @@ void MainWindow::ListDisplay(){
     ui->NFCWidget->setSortingEnabled(true);
     ui->AFCWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
     ui->AFCWidget->setSortingEnabled(true);
+}
+
+
+// The admin has the ability to upload a new team by reading another input file after logging in
+
+void MainWindow::expandTables(){
+    // set a new array for the new team list
+    NFLInput arr2[1];
+
+    // reset all rows and columns to 0 so when call the listDisplay function
+    // it will have the right numbers
+    ui->teamWidget->setColumnCount(0);
+    ui->teamWidget->setRowCount(0);
+    ui->AFCWidget->setColumnCount(0);
+    ui->AFCWidget->setRowCount(0);
+    ui->NFCWidget->setColumnCount(0);
+    ui->NFCWidget->setRowCount(0);
+
+    // call the table with orginal team list read in already
+    ListDisplay();
+
+    // read in the new input file for the new team
+    QString fileName = (":/InputFiles/NFL_New_Team.txt");
+    arr2->inputFn(fileName,arr2, 1);    // 1 because ther is only one team to add
+
+    //set the row to the last row of the list that is displaying
+    int rows = ui->teamWidget->rowCount();
+    // addting one because there is only one team added
+    ui->teamWidget->setRowCount(rows + 1);
+
+    // set new item pointer to point the data into the list
+    QTableWidgetItem *item3;
+    QTableWidgetItem *item4;
+
+    // set the new team to the last row
+    int AFCRows = ui->AFCWidget->rowCount();
+    int NFLRows = ui->NFCWidget->rowCount();
+
+
+    // arr2[0] the 0 is because there is only one new team so the index is zero
+    if(arr2[0].getConference()[0] == 'A')
+    {
+        ui->AFCWidget->setRowCount(AFCRows + 1);
+    } else {
+        ui->NFCWidget->setRowCount(NFLRows + 1);
+    }
+
+    // loop through all the team in the list and get the data
+    for(int j = 0; j < 9; j++)
+    {
+        item3 = new QTableWidgetItem;       // set a new pointer
+        item4 = new QTableWidgetItem;       // set a new pointer
+
+        // used the get function to input all the data to the list by column
+        switch (j) {
+            case 0: item3->setText(QString::fromStdString(arr2[0].getTeamName()));
+                    item4->setText(QString::fromStdString(arr2[0].getTeamName()));
+                break;
+            case 1: item3->setText(QString::fromStdString(arr2[0].getStadiumName()));
+                    item4->setText(QString::fromStdString(arr2[0].getStadiumName()));
+                break;
+            case 2: item3->setText(QString::fromStdString(to_string(arr2[0].getSeatingCapacity())));
+                    item4->setText(QString::fromStdString(to_string(arr2[0].getSeatingCapacity())));
+                break;
+            case 3: item3->setText(QString::fromStdString(arr2[0].getLocation()));
+                    item4->setText(QString::fromStdString(arr2[0].getLocation()));
+                break;
+            case 4: item3->setText(QString::fromStdString(arr2[0].getConference()));
+                    item4->setText(QString::fromStdString(arr2[0].getConference()));
+                break;
+            case 5: item3->setText(QString::fromStdString(arr2[0].getDivision()));
+                    item4->setText(QString::fromStdString(arr2[0].getDivision()));
+                break;
+            case 6: item3->setText(QString::fromStdString(arr2[0].getSurfaceType()));
+                    item4->setText(QString::fromStdString(arr2[0].getSurfaceType()));
+                break;
+            case 7: item3->setText(QString::fromStdString(arr2[0].getStadiumRoofType()));
+                    item4->setText(QString::fromStdString(arr2[0].getStadiumRoofType()));
+                break;
+            case 8: item3->setText(QString::fromStdString(to_string(arr2[0].getDateOpened())));
+                    item4->setText(QString::fromStdString(to_string(arr2[0].getDateOpened())));
+                break;
+        }
+
+        // default display the original list
+        // Qt::ItemIsEditable flags is so the user can interact with the list
+        item3->setFlags(item3->flags() ^ Qt::ItemIsEditable);
+        ui->teamWidget->setItem(rows, j, item3);
+
+        // check if the new team conference is AFC or NFL
+        if(arr2[0].getConference()[0] == 'A')
+        {
+            item4->setFlags(item4->flags() ^ Qt::ItemIsEditable);
+            ui->AFCWidget->setItem(AFCRows, j, item4);
+        }
+        else
+        {
+            item4->setFlags(item4->flags() ^ Qt::ItemIsEditable);
+            ui->NFCWidget->setItem(NFLRows, j, item4);
+        }
+        ui->NFCWidget->setSortingEnabled(true);
+        // add the seating capacity to the total size
+        // total size is initialize at MainWindow.h file
+        totalSize += arr2[0].getSeatingCapacity();
+        // display the number on a button
+        ui->TotalCapacity->setText(QString::fromStdString(to_string(totalSize)));
+
+    }
+
+}
+
+// have to use the log in on the left top conner.
+void MainWindow::on_actionLog_triggered()
+{
+    loginForm->setModal(true);
+    loginForm->exec();
 }
 
 // This is where the user can choose to to see all team list or just the NFC team or sthe AFC Team
@@ -404,4 +496,6 @@ void MainWindow::on_AFCTem_clicked()
     ui->NFCWidget->setVisible(false);
     ui->AFCWidget->setVisible(true);
 }
+
+
 
